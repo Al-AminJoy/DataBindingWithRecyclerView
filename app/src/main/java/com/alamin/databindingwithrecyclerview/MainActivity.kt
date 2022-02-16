@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater);
         setContentView(binding.root);
 
-        var data = listOf(Message(1,"Hello"),
-            Message(2,"Hi"),
-            Message(3,"Greetings"))
+        var data = listOf(Message(1,"Hello", "https://i.postimg.cc/nr0fMmS3/Logo.png"),
+            Message(2,"Hi", "https://i.postimg.cc/nr0fMmS3/Logo.png"),
+            Message(3,"Greetings", "https://i.postimg.cc/nr0fMmS3/Logo.png"))
 
         manager = LinearLayoutManager(this);
         binding.recyclerView.apply {
